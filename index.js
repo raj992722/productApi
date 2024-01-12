@@ -1,4 +1,7 @@
 const express=requires('express');
+const app=express();
+
+const ProductRouter=require('./router/product-router');
 
 var mongoose = require('mongoose');
 //Set up default mongoose connection
@@ -11,9 +14,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 
-const app=express();
 
-const ProductRouter=require('./router/product-router');
 
 
 
