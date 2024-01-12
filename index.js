@@ -1,4 +1,4 @@
-const express=requires('express');
+const express=require('express');
 const app=express();
 
 const ProductRouter=require('./router/product-router');
